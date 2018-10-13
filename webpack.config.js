@@ -15,9 +15,9 @@ const config = {
       },
       {
         // check for files ending with  .css (uses Regex)
-        test: /\.css$/,
+        test: /(\.css|\.scss)$/,
          // use these loaders of .css files. 'css-loader gets run first and is
-         // used to handle the imports of our css files inside our jsx files. 
+         // used to handle the imports of our css files inside our jsx files.
          // The style loader then mounts our css in to the DOM
         loaders: ['style-loader', 'css-loader']
       }
